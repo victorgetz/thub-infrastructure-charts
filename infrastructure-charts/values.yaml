@@ -29,9 +29,11 @@ charts:
 
   kafka:
     namespace: kafka
-    targetRevision: 22.1.6
+    targetRevision: 22.2.0-bitnamilegacy
+    valueFile: "value-files/kafka/values.yaml"
     parameters:
       "kafka.replicaCount": "1"
+
 #   Remote chart from public helm repo
 #  bitnami-kafka:
 #    namespace: bitnami-kafka # Which namespace should the service be deployed
