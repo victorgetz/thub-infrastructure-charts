@@ -50,7 +50,7 @@ In this example we will install an elastic stack (kibana/elasticsearch/filebeat)
   ```yaml
   elastic-operator:
     namespace: monitoring
-    targetRevision: 8.18.1
+    targetRevision: elastic-operator-9.0.5-bitnamilegacy
     parameters:
       ingress.kibana.host: "admin.{{.Values.projectValues.rootDomain}}"
   ```
