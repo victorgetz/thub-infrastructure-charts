@@ -1,0 +1,4 @@
+kafka:
+  metrics:
+    kafka:
+      enabled: false
