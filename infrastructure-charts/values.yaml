@@ -21,11 +21,11 @@ charts:
     path: "local-charts/basic-auth"
     parameters:
       credentials.password: "{{.Values.projectValues.basicAuthPassword}}"
-    kumoops-admin-dashboard:
-      namespace: "admin"
-      path: "local-charts/kumoops-admin-dashboard"
-      targetRevision: "main"
-      valueFile: "value-files/kumoops-admin-dashboard/values.yaml"
+  kumoops-admin-dashboard:
+    namespace: "admin"
+    path: "local-charts/kumoops-admin-dashboard"
+    targetRevision: "main"
+    valueFile: "value-files/kumoops-admin-dashboard/values.yaml"
 
   kafka:
     namespace: kafka
