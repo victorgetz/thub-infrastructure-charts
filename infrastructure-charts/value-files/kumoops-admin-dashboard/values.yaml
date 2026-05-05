@@ -46,7 +46,7 @@ defaultDashboard:
       href: "https://vault.thub.iits-consulting.de/ui/vault/auth?with=keycloak/"
     otc:
       enabled: true
-      href: "{{ .Values.projectValues.otcSsoUrl }}"
+      href: "https://auth.thub.iits-consulting.de/admin/infrastructure/console/"
       imgSrc: "https://iits-consulting.de/wp-content/uploads/2026/01/otc-logo.svg"
       imgAlt: "T Cloud Public"
       category: "Cloud"
