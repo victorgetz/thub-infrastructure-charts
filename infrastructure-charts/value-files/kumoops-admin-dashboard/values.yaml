@@ -8,9 +8,9 @@ ingress:
 
 defaultDashboard:
   title: "KumoOps Admin Page"
-  userinfoUrl: "https://{{ .Values.projectValues.authDomain }}/realms/infrastructure/protocol/openid-connect/userinfo"
-  logoutUrl: "https://{{ .Values.projectValues.authDomain }}/realms/infrastructure/protocol/openid-connect/logout"
-  context: "{{ .Values.projectValues.context | upper }}"
+  userinfoUrl: "https://auth.thub.iits-consulting.de/realms/infrastructure/protocol/openid-connect/userinfo"
+  logoutUrl: "https://auth.thub.iits-consulting.de/realms/infrastructure/protocol/openid-connect/logout"
+  context: "thub"
   tiles:
     # Disable tiles not used in this deployment
     portal:
@@ -39,11 +39,11 @@ defaultDashboard:
       enabled: true
     # Override URLs for this deployment
     keycloak:
-      href: "https://{{ .Values.projectValues.authDomain }}/admin/infrastructure/console/"
+      href: "https://auth.thub.iits-consulting.de/admin/infrastructure/console/"
     logout:
-      href: "https://{{ .Values.projectValues.authDomain }}/realms/infrastructure/protocol/openid-connect/logout"
+      href: "https://auth.thub.iits-consulting.de/realms/infrastructure/protocol/openid-connect/logout"
     vault:
-      href: "https://{{ .Values.projectValues.vaultDomain }}/ui/vault/auth?with=keycloak/"
+      href: "https://vault.thub.iits-consulting.de/ui/vault/auth?with=keycloak/"
     otc:
       enabled: true
       href: "{{ .Values.projectValues.otcSsoUrl }}"
